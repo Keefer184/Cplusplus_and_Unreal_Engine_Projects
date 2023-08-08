@@ -4,8 +4,199 @@ using namespace std;
 #include <string>
 #include <cmath>
 
+//int AddFunction(int &x, int &y){
+//    return x + y;
+//}
+//
+//double AddFunction(double x, double y) {
+//    return x + y;
+//}
+//
+//void NameAge(string name = "Matt", int age = 37) {
+//    cout << name << " , " << age << endl;
+//}
+//
+//class Heroes {
+//public:
+//    string name;
+//    string weapon;
+//    int level;
+//    void DisplayInfo() {
+//        cout << name << "is a hero who wields a " << weapon << " and starts at level " << level << ".\n";
+//    }
+//    void LevelUp();
+//};
+//
+//void Heroes::LevelUp() {
+//    level++;
+//    cout << name << " is now level " << level << ".\n";
+//}
+//
+//class Alternates {
+//public:
+//    string name;
+//    string weapon;
+//    int level;
+//    Alternates(string x, string y, int z);
+//};
+//
+//Alternates::Alternates(string x, string y, int z) {
+//    name = x;
+//    weapon = y; 
+//    level = z;
+//}
+//
+//class BusterSword {
+//private:
+//    int power;
+//
+//public: 
+//    void setPower(int pow) {
+//        power = pow;
+//    }
+//    
+//    int getPower() {
+//        return power;
+//    }
+//};
+
+////Base Class
+//class Heroes {
+//public:
+//    string name;
+//    string weapon;
+//
+//protected:
+//    int level;
+//};
+//
+//class Villains {
+//public:
+//    string villianname;
+//protected:
+//    string questLocation;
+//};
+//
+//class Alternates: public Heroes, public Villains{
+//public:
+//    void setLevel(int l) {
+//        level = l;
+//    }
+//    int getLevel() {
+//        return level;
+//    }
+//};
+//
+//class SideChars: public Alternates{
+//public:
+//    void setLocation(string loc) {
+//        questLocation = loc;
+//    }
+//    string getLocation() {
+//        return questLocation;
+//    }
+//
+//};
+
+//class Car {
+//public:
+//    void CarSound() {
+//        cout << "The sound the engine makes is whn nn nnn nnn";
+//    }
+//};
+//
+//class Racer : public Car {
+//public:
+//    void CarSound() {
+//        cout << "The sound the engine makes is VRM VRRRRMMMMM VRRRRMMMMMMMMMMM";
+//    }
+//};
+//
+//class Electric :public Car {
+//public:
+//    void CarSound() {
+//        cout << "This engine makes no sound...";
+//    }
+//};
+
 int main()
 {
+    try {
+        int age=18;
+        if (age >= 21) {
+            cout << "You may purchase alcohol from this establishment";
+        }
+        else {
+            throw (age);
+        }
+    }
+    catch (int attemptedAge) {
+        cout << "Sale denied, you must be at least 21 to purchase alchol." << endl;
+        cout << "Your age is: " << attemptedAge << endl;
+    }
+
+    //Car regCar;
+    //Racer raceCar;
+    //Electric electricCar;
+
+    //regCar.CarSound();
+    //raceCar.CarSound();
+    //electricCar.CarSound();
+
+
+    //Alternates caitSith;
+    //caitSith.name = "Cait Sith";
+    //caitSith.villianname = "Reeve";
+    //caitSith.setLevel(99);
+
+    //SideChars yuffie;
+    //yuffie.name = "Yuffi Kisaragi";
+    //yuffie.weapon = "Shuriken";
+    //yuffie.setLocation(" forest outside of Junon ");
+
+    //cout << caitSith.name << " and " << yuffie.name << " are characters who you can obtain in FFVII.\n" << caitSith.villianname << " can reach level " << caitSith.getLevel() << ".\n" << yuffie.name << " can be found at " << yuffie.getLocation() << endl;
+
+    //BusterSword buster;
+    //buster.setPower(100);
+    //cout << buster.getPower() << endl;
+
+    //Alternates tifa ("Tifa", "Knuckles", 11);
+    //Alternates aerith ("Aerith", "Staff", 15);
+
+    //cout << tifa.name << " and " << aerith.name << " are permanent characters who provide support to the main character." << endl;
+
+
+    //Heroes cloud;
+    //cloud.name = "Cloud Strife";
+    //cloud.weapon = "Buster Sword";
+    //cloud.level = 7;
+
+    //Heroes squall;
+    //squall.name = "Squall Lionheart";
+    //squall.weapon = "Gun Blade";
+    //squall.level = 8;
+
+    //cout << cloud.name << " is a hero who wields a " << cloud.weapon << " and starts at level " << cloud.level << endl;
+    //cout << squall.name << " is a hero who wields a " << squall.weapon << " and starts at level " << squall.level << endl;
+    
+    //cloud.DisplayInfo();
+    //squall.DisplayInfo();
+
+    //cloud.LevelUp();
+
+    //int firstNum = 10;
+    //int secondNum = 8;
+    //int z = AddFunction(firstNum, secondNum);
+    //cout << z << endl;
+
+    //double y = AddFunction(3.14, 2.828);
+    //cout << y << endl;
+
+    //NameAge();
+    //NameAge("Jim", 24);
+    
+
+
     //const int favNum = 184;
     //string itIs = "It is ";
     //bool isTrue = false;
@@ -157,18 +348,20 @@ int main()
     //    cout << hero << endl;
     //}
 
-    int x = 184;
-    int* ptr = &x;
+    //int x = 184;
+    //int* ptr = &x;
     /*int& y = x;
     cout << x << endl;
     cout << y << endl;*/
 
-    cout << &x << endl;
-    cout << ptr << endl;
-    cout << *ptr << endl;
+    //cout << &x << endl;
+    //cout << ptr << endl;
+    //cout << *ptr << endl;
 
-
-
+    
+    return 0;
 }
+
+
 
 
